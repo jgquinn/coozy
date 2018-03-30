@@ -1,0 +1,11 @@
+[[constraint]]
+  name = "github.com/gobuffalo/pop"
+  version = "^4.0.0"
+
+[[constraint]]
+  name = "github.com/gobuffalo/uuid"
+  version = "^2.0.0"
+
+[prune]
+  go-tests = true
+  unused-packages = true
