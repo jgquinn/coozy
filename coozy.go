@@ -1,7 +1,10 @@
 package coozy
 
 import (
+	"encoding/json"
+
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/pop/nulls"
 )
 
 // Version contains the package version.
@@ -10,6 +13,15 @@ const Version = "0.0.1"
 // WhereLiker defines the WhereLike() method used by FindPop.
 type WhereLiker interface {
 	WhereLike(q *pop.Query) *pop.Query
+}
+
+// NullableJSONMap returns map poplated from not-null JSON string when provided.
+func NullableJSONMap(ns nulls.String) (m map[string]string) {
+	if ns.Valid {
+		m = make(map[string]string)
+		_ = json.Unmarshal([]byte(ns.String), &m)
+	}
+	return
 }
 
 // SavePop saves a record struct into the named environment.
