@@ -33,11 +33,13 @@ func SavePop(popEnvironmentName string, rec interface{}) (err error) {
 		return
 	}
 
-	err = tx.Save(rec)
-	if err != nil {
-		return
-	}
+	err = SaveConnectedPop(tx, rec)
+	return
+}
 
+// SaveConnectedPop saves a record struct into the provided Pop connection.
+func SaveConnectedPop(tx *pop.Connection, rec interface{}) (err error) {
+	err = tx.Save(rec)
 	return
 }
 
@@ -50,6 +52,12 @@ func FindPop(popEnvironmentName string, criteria WhereLiker, recs interface{}, e
 		return
 	}
 
+	err = FindConnectedPop(tx, criteria, recs, eagerFetchFields...)
+	return
+}
+
+// FindConnectedPop queries the named environment for records based on the supplied criteria.
+func FindConnectedPop(tx *pop.Connection, criteria WhereLiker, recs interface{}, eagerFetchFields ...string) (err error) {
 	var q *pop.Query
 	if len(eagerFetchFields) > 0 {
 		q = tx.Eager(eagerFetchFields...)
