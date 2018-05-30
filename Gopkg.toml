@@ -1,6 +1,6 @@
 [[constraint]]
   name = "github.com/gobuffalo/pop"
-  version = "^4.0.0"
+  version = "^4.4.0"
 
 [[constraint]]
   name = "github.com/gobuffalo/uuid"

@@ -58,11 +58,9 @@ func FindPop(popEnvironmentName string, criteria WhereLiker, recs interface{}, e
 
 // FindConnectedPop queries the named environment for records based on the supplied criteria.
 func FindConnectedPop(tx *pop.Connection, criteria WhereLiker, recs interface{}, eagerFetchFields ...string) (err error) {
-	var q *pop.Query
+	q := tx.Q()
 	if len(eagerFetchFields) > 0 {
-		q = tx.Eager(eagerFetchFields...)
-	} else {
-		q = tx.Q()
+		q = q.Eager(eagerFetchFields...)
 	}
 
 	err = criteria.WhereLike(q).All(recs)

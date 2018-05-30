@@ -10,14 +10,14 @@
 [[projects]]
   name = "github.com/fatih/color"
   packages = ["."]
-  revision = "507f6050b8568533fb3f5504de8e5205fa62a114"
-  version = "v1.6.0"
+  revision = "5b77d2a35fb0ede96d138fc9a99f5c9b6aef11b4"
+  version = "v1.7.0"
 
 [[projects]]
   name = "github.com/go-sql-driver/mysql"
   packages = ["."]
   revision = "a0583e0143b1624142adab07e0e97fe106d99561"
-  version = "v1.3"
+  version = "v1.3.0"
 
 [[projects]]
   name = "github.com/gobuffalo/envy"
@@ -26,10 +26,16 @@
   version = "v1.6.2"
 
 [[projects]]
+  name = "github.com/gobuffalo/makr"
+  packages = ["."]
+  revision = "2f752af1831478b8c496635cb46b947811097061"
+  version = "v1.1.0"
+
+[[projects]]
   name = "github.com/gobuffalo/packr"
   packages = ["."]
-  revision = "3402a167bccf1bdd5c93ca820be9f27bba46261e"
-  version = "v1.10.7"
+  revision = "7f4074995d431987caaa35088199f13c44b24440"
+  version = "v1.11.0"
 
 [[projects]]
   name = "github.com/gobuffalo/pop"
@@ -41,8 +47,8 @@
     "fizz/translators",
     "nulls"
   ]
-  revision = "d11f9179130af452f496f91138d120566ae40bed"
-  version = "v4.3.0"
+  revision = "9985012f32f5e36b1a10e9191ee460daac4a9bc7"
+  version = "v4.5.9"
 
 [[projects]]
   name = "github.com/gobuffalo/uuid"
@@ -63,7 +69,7 @@
     ".",
     "reflectx"
   ]
-  revision = "cf35089a197953c69420c8d0cecda90809764b1d"
+  revision = "2aeb6a910c2b94f2d5eb53d9895d80e27264ec41"
 
 [[projects]]
   name = "github.com/joho/godotenv"
@@ -78,7 +84,7 @@
     ".",
     "oid"
   ]
-  revision = "d34b9ff171c21ad295489235aec8b6626023cd04"
+  revision = "90697d60dd844d5ef6ff15135d0203f65d2f53b8"
 
 [[projects]]
   branch = "master"
@@ -94,7 +100,7 @@
   branch = "master"
   name = "github.com/markbates/inflect"
   packages = ["."]
-  revision = "b5c853d089b86134926274bc7a98496fee5e1d6b"
+  revision = "dd7de90c06bca70f18136e59dec2270c19a401e7"
 
 [[projects]]
   name = "github.com/mattn/anko"
@@ -104,8 +110,8 @@
     "parser",
     "vm"
   ]
-  revision = "f4b54922efdd844c58a93f8faca1fe0c62ca44c3"
-  version = "v0.0.2"
+  revision = "e9c5c0ca86cf129292c56ddbddc4fff027844d65"
+  version = "v0.0.4"
 
 [[projects]]
   name = "github.com/mattn/go-colorable"
@@ -122,8 +128,8 @@
 [[projects]]
   name = "github.com/mattn/go-sqlite3"
   packages = ["."]
-  revision = "6c771bb9887719704b210e87e934f08be014bdb1"
-  version = "v1.6.0"
+  revision = "323a32be5a2421b8c7087225079c6c900ec397cd"
+  version = "v1.7.0"
 
 [[projects]]
   name = "github.com/pkg/errors"
@@ -135,7 +141,7 @@
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
-  revision = "6078986fec03a1dcc236c34816c71b0e05018fda"
+  revision = "4ef37e81ae7d4d477bda45ba9506a70004e1317b"
 
 [[projects]]
   branch = "master"
@@ -147,7 +153,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "378d26f46672a356c46195c28f61bdb4c0a781dd"
+  revision = "c11f84a56e43e20a78cee75a7c034031ecf57d1f"
 
 [[projects]]
   name = "gopkg.in/yaml.v2"
