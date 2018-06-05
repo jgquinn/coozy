@@ -8,7 +8,7 @@ import (
 )
 
 // Version contains the package version.
-const Version = "0.0.5"
+const Version = "0.0.6-dev"
 
 // WhereLiker defines the WhereLike() method used by FindPop.
 type WhereLiker interface {
