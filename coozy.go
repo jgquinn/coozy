@@ -1,4 +1,4 @@
-package coozy
+package coozy // import "jgquinn.com/coozy"
 
 import (
 	"encoding/json"
