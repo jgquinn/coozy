@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gobuffalo/pop/nulls"
-	"github.com/gobuffalo/uuid"
+	"github.com/gofrs/uuid"
 )
 
 // StringsValidEqual returns true if both a and b are valid and contain equal values.
@@ -14,7 +14,7 @@ func StringsValidEqual(a *nulls.String, b *nulls.String) bool {
 
 // UUIDValidEqual returns true if both a and b are non-zero and have equal values.
 func UUIDValidEqual(a uuid.UUID, b uuid.UUID) bool {
-	return (a != uuid.Nil && b != uuid.Nil && uuid.Equal(a, b))
+	return (a != uuid.Nil && b != uuid.Nil && a==b)
 }
 
 // TimesValidEqual returns true if both a and b are valid and contain equal values.

@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/gobuffalo/pop/nulls"
-	"github.com/gobuffalo/uuid"
+	"github.com/gofrs/uuid"
 )
 
 // AppendQueryUUIDCriteria adds an AND clause to the query being constructed in with the provided Builder and parameter values slice.
